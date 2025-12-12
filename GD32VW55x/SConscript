@@ -47,6 +47,6 @@ path = [
     cwd + '/GD32VW55x_standard_peripheral',
     cwd + '/GD32VW55x_standard_peripheral/Include',]
 
-group = DefineGroup('Libraries', src, depend = [''], CPPPATH = path)
+group = DefineGroup('Libraries', src, depend = ['SOC_SERIES_GD32VW55x'], CPPPATH = path)
 
 Return('group')
